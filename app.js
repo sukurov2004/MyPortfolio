@@ -33,14 +33,14 @@ const projects = [
     title: "Coffee Shop",
     description: "Landing page built with HTML, CSS, and JavaScript. Clean and stylish design focused on UX.",
     image: "image/Coffee.png",
-    url: "https://sukurov2004.github.io/CoffeeDemo/"
+    url: "https://coffee-demo-six.vercel.app/"
   },
   {
     id: 2,
     title: "Playoff Lounge Restaurant",
     description: "Modern website with smooth animations and interactive elements, built with HTML, CSS, JS.",
     image: "image/PlayOff.png",
-    url: "https://sukurov2004.github.io/RestaurantDemo/"
+    url: "https://play-off-demo.vercel.app/"
   },
   {
     id: 3,

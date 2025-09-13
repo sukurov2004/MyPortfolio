@@ -1,39 +1,77 @@
 //!Burger menu linke girende menu baglamaq
-const navbarCollapse = document.querySelector(".navbar-collapse");
 
-document.querySelectorAll(".navbar-collapse .nav-link").forEach(link => {
-  link.addEventListener("click", () => {
-    if (navbarCollapse.classList.contains("show")) {
+  const navbarCollapse = document.getElementById("navbarNav");
+  const navbarToggler = document.querySelector(".navbar-toggler");
+
+  // Link kliklənəndə bağlansın
+  document.querySelectorAll(".navbar-collapse .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (navbarCollapse.classList.contains("show")) {
+        new bootstrap.Collapse(navbarCollapse).hide();
+      }
+    });
+  });
+
+  // Kənara kliklənəndə bağlansın
+  document.addEventListener("click", (e) => {
+    if (
+      navbarCollapse.classList.contains("show") &&
+      !navbarCollapse.contains(e.target) && // klik menyunun içində deyil
+      !navbarToggler.contains(e.target)      // klik burger düyməsində deyil
+    ) {
       new bootstrap.Collapse(navbarCollapse).hide();
     }
   });
-});
+
+
 
 //!Project section
-fetch("./data/project.json")
-  .then((response) => response.json())
-  .then((projects) => {
-    const projectsRow = document.getElementById("projects-row");
+// JSON faylına ehtiyac yoxdur, birbaşa array kimi yazırıq
+const projects = [
+  {
+    id: 1,
+    title: "Coffee Shop",
+    description: "Landing page built with HTML, CSS, and JavaScript. Clean and stylish design focused on UX.",
+    image: "image/Coffee.png",
+    url: "https://sukurov2004.github.io/CoffeeDemo/"
+  },
+  {
+    id: 2,
+    title: "Playoff Lounge Restaurant",
+    description: "Modern website with smooth animations and interactive elements, built with HTML, CSS, JS.",
+    image: "image/Playoff.png",
+    url: "https://sukurov2004.github.io/RestaurantDemo/"
+  },
+  {
+    id: 3,
+    title: "Veb Dizayn Landing Page",
+    description: "Responsive landing page built with Bootstrap framework.",
+    image: "image/VebDizayn.png",
+    url: "https://sukurov2004.github.io/VebDizaynDemo/"
+  }
+];
 
-    projects.slice(0, 3).forEach((project) => {
-      const col = document.createElement("div");
-      col.classList.add("col-md-4", "mb-4");
+// HTML-ə doldurmaq
+const projectsRow = document.getElementById("projects-row");
 
-      col.innerHTML = `
-        <div class="card h-100 shadow-sm rounded-4">
-          <img src="${project.image}" class="card-img-top" alt="${project.title}">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">${project.title}</h5>
-            <p class="card-text flex-grow-1">${project.description}</p>
-            <a href="${project.url}" target="_blank" class="btn btn-outline-dark mt-3">View Live</a>
-          </div>
-        </div>
-      `;
+projects.slice(0, 3).forEach((project) => {
+  const col = document.createElement("div");
+  col.classList.add("col-md-4", "mb-4");
 
-      projectsRow.appendChild(col);
-    });
-  })
-  .catch((err) => console.error("Xəta baş verdi:", err));
+  col.innerHTML = `
+    <div class="card h-100 shadow-sm rounded-4">
+      <img src="${project.image}" class="card-img-top" alt="${project.title}">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold">${project.title}</h5>
+        <p class="card-text flex-grow-1">${project.description}</p>
+        <a href="${project.url}" target="_blank" class="btn btn-outline-dark mt-3">View Live</a>
+      </div>
+    </div>
+  `;
+
+  projectsRow.appendChild(col);
+});
+
 
 
 

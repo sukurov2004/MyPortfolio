@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Coffee Shop",
+    "description": "This landing page is built with HTML, CSS, and JavaScript. It features a clean and stylish design focused on user experience.",
+    "image": "image/Coffee.png",
+    "url": "https://sukurov2004.github.io/CoffeeDemo/"
+  },
+  {
+    "id": 2,
+    "title": "Playoff Lounge Restaurant",
+    "description": "This modern website is built with HTML, CSS, and JavaScript. It offers smooth animations and interactive elements.",
+    "image": "image/Playoff.png",
+    "url": "https://sukurov2004.github.io/RestaurantDemo/"
+  },
+  {
+    "id": 3,
+    "title": "Veb Dizayn Landing Page",
+    "description": "This modern website is built with the Bootstrap framework. It offers a responsive design and interactive elements.",
+    "image": "image/VebDizayn.png",
+    "url": "https://sukurov2004.github.io/VebDizaynDemo/"
+  }
+]

@@ -26,7 +26,7 @@
 
 
 //!Project section
-// JSON faylına ehtiyac yoxdur, birbaşa array kimi yazırıq
+
 const projects = [
   {
     id: 1,
@@ -39,7 +39,7 @@ const projects = [
     id: 2,
     title: "Playoff Lounge Restaurant",
     description: "Modern website with smooth animations and interactive elements, built with HTML, CSS, JS.",
-    image: "image/Playoff.png",
+    image: "image/PlayOff.png",
     url: "https://sukurov2004.github.io/RestaurantDemo/"
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: "Veb Dizayn Landing Page",
     description: "Responsive landing page built with Bootstrap framework.",
     image: "image/VebDizayn.png",
-    url: "https://sukurov2004.github.io/VebDizaynDemo/"
+    url: "https://veb-dizayn-demo.vercel.app/"
   }
 ];
 

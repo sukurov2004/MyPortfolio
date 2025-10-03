@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #00df9a;
+  --primary-color: #4facfe;
   --secondary-color: #1a1a2e;
   --accent-color: #0f3460;
   --text-light: #f8f9fa;
@@ -37,7 +37,7 @@ body {
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  background: var(--gradient-4);
+  background: var(--gradient-3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -64,7 +64,7 @@ body {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: var(--gradient-4);
+  background: var(--gradient-3);
   transition: width 0.3s ease;
 }
 
@@ -123,7 +123,7 @@ body {
 #home h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  background: var(--gradient-4);
+  background: var(--gradient-3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -213,6 +213,7 @@ body {
   font-size: 3rem;
   font-weight: 800;
   background: linear-gradient(90deg, #43e97b, #38f9d7);
+  background: var(--gradient-3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -239,7 +240,7 @@ body {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border-color: #43e97b;
+  border-color: var(--primary-color);
 }
 
 .project-card img {
@@ -258,7 +259,7 @@ body {
 .project-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #43e97b;
+  color: #4facfe;
   margin-bottom: 15px;
 }
 
@@ -270,7 +271,7 @@ body {
 
 /* Button Style */
 .project-card .btn {
-  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  background: linear-gradient(90deg, #4facfe, #38f9d7);
   border: none;
   padding: 10px 25px;
   border-radius: 50px;
@@ -292,7 +293,7 @@ body {
 }
 
 .gradient-text {
-  background: var(--gradient-4);
+  background: var(--gradient-3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -344,7 +345,7 @@ body {
 }
 
 .phone-icon {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #4facfe 0%, #38f9d7 100%);
 }
 
 .location-icon {
@@ -441,7 +442,7 @@ body {
 }
 
 .btn-gradient {
-  background: var(--gradient-4);
+  background: var(--gradient-3);
   border: none;
   color: #000;
   font-weight: 700;
@@ -525,7 +526,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #43e97b; /* eyni rəng kodunu proyektin primary rəngi kimi saxladım */
+  color:#4facfe; 
 }
 
 .footer-icon {
@@ -534,7 +535,7 @@ body {
 }
 
 .footer-icon:hover {
-  color: #43e97b;
+  color: #4facfe;
   transform: translateY(-3px);
 }
 

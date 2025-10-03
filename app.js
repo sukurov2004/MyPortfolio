@@ -24,31 +24,31 @@
   });
 
 
-
-//!Project section
-
+//! Project section
 const projects = [
   {
     id: 1,
     title: "Coffee Shop",
-    description: "Landing page built with HTML, CSS, and JavaScript. Clean and stylish design focused on UX.",
+    description:
+      "Landing page built with HTML, CSS, and JavaScript. Clean and stylish design focused on UX.",
     image: "image/Coffee.png",
-    url: "https://coffee-demo-six.vercel.app/"
+    url: "https://coffee-demo-six.vercel.app/",
   },
   {
     id: 2,
     title: "Playoff Lounge Restaurant",
-    description: "Modern website with smooth animations and interactive elements, built with HTML, CSS, JS.",
+    description:
+      "Modern website with smooth animations and interactive elements, built with HTML, CSS, JS.",
     image: "image/PlayOff.png",
-    url: "https://play-off-demo.vercel.app/"
+    url: "https://play-off-demo.vercel.app/",
   },
   {
     id: 3,
     title: "Veb Dizayn Landing Page",
     description: "Responsive landing page built with Bootstrap framework.",
     image: "image/VebDizayn.png",
-    url: "https://veb-dizayn-demo.vercel.app/"
-  }
+    url: "https://veb-dizayn-demo.vercel.app/",
+  },
 ];
 
 // HTML-ə doldurmaq
@@ -59,18 +59,17 @@ projects.slice(0, 3).forEach((project) => {
   col.classList.add("col-md-4", "mb-4");
 
   col.innerHTML = `
-    <div class="card h-100 shadow-sm rounded-4">
-      <img src="${project.image}" class="card-img-top" alt="${project.title}">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold">${project.title}</h5>
-        <p class="card-text flex-grow-1">${project.description}</p>
-        <a href="${project.url}" target="_blank" class="btn btn-outline-dark mt-3">View Live</a>
-      </div>
+    <div class="project-card h-100">
+      <img src="${project.image}" alt="${project.title}">
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <a href="${project.url}" target="_blank" class="btn">View Live</a>
     </div>
   `;
 
   projectsRow.appendChild(col);
 });
+
 
 
 
